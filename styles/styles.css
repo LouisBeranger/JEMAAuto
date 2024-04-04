@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+nav>ul{
+    background-color: #B4B4B8;
+    list-style: none;
+    display:flex;
+    padding:2vh;
+}
+
+nav>ul>li{
+    padding-left: 2.3vh;
+    text-decoration: none;
+    color: black;
+}
+
+#section1{
+    height: 400px;
+    width:100%;
+    background-color: #ffffff;
+
+}
+
+#section2{
+    height: 100px;
+    width:100%;
+    background-color: #2f2f2f;
+}
