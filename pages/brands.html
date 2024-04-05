@@ -8,48 +8,63 @@
         <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./../styles/barlow.css">
         <title>JEMA Auto</title>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                border: 0;
+                text-align: justify;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
-        <nav class="sticky bg-white">
-            <ul>
-                <li><b>JEMA AUTO</b></li>
-                <li style="padding-left:40%;"><a href="./../pages/home.html">Home</a></li>
-                <li><a href="./../pages/brands.html">Brands</a></li>
-                <li><a href="./../pages/contacts.html">Contacts</a></li>
-                <li><a href="https://jemaauto.ipfsoftwares.com/">Shop</a></li>
+        <nav class=" bg-white flex justify-between h-24">
+            <h1 class="text-4xl mt-7 ml-10"><a href="./../pages/home.html"><b>JEMA AUTO</b></a></h1>
+            <ul class="list-none flex text-lg mt-4 text-lg mr-7">
+                <li class="p-5 mx-4"><a href="./../pages/home.html">Home</a></li>
+                <li class="p-5 mx-4"><a href="./../pages/brands.html">Brands</a></li>
+                <li class="p-5 mx-4"><a href="./../pages/contacts.html">Contacts</a></li>
+                <li class="p-5 mx-4"><a href="https://jemaauto.ipfsoftwares.com/">Shop</a></li>
             </ul>
         </nav>
 
 <!--Section1-->
 
-        <section class="brandsSection"; id="section1">
+        <section class="brandsSection "; id="section1">
             <div>
-                <img src="./../images/images_brands/section1 image brands.png" style="width:60%;height:113.7vh;float: right;">
-            </div>
-            <div class="pt-20">
-                <h1 style="padding-left: 50px;padding-top: 60px;font-size: 37px;">FIND YOUR PERFECT <br> CAR HERE!</h1>
-                <p style="margin:30px; padding-left: 20px; margin-bottom: 50px;">How much can you afford? Find out, then see vehicles<br>that match your budget </p>
+                <img src="./../images/images_brands/section1 image brands.png" class="w-7/12 h-full float-right ">
             </div>
             <div>
-                <form action="/search" method="GET">
-                    <select>
+                <h1 class="lg:pl-12 sm:pl-4 sm:pt-10 lg:pt-20 text-4xl"><b>FIND YOUR PERFECT<br> CAR HERE!</b></h1>
+                <p class="lg:pl-12 sm:pl-4 lg:mt-8 sm:mt-4 lg:mb-12 sm:mb-7">How much can you afford? Find out, then see vehicles<br>that match your budget </p>
+            </div>
+            <div>
+                <form action="/search" method="GET" class="flex lg:justify-center ">
+                    <select class="sm:text-sm lg:text-base border-2 border-solid rounded-xl border-gray-300 outline-none bg-gray-300 sm:ml-6 mr-2 cursor-pointer">
                         <option value="option1">Cars for sale</option>
                         <option value="option2">Sell your car</option>
                     </select>
-                    <input type="text" name="query" placeholder="Search make, model or type">
-                    <button type="submit">Search</button>
+                    <input type="text" name="query" placeholder="Search make, model or type" class="border-2 border-solid rounded-xl border-gray-500 placeholder-black p-2 lg:w-60 sm:text-sm lg:text-base outline-none mr-2">
+                    <button type="submit" class="cursor-pointer border border-none rounded-xl border-gray-600 text-white sm:text-sm lg:text-base text-center justify-center flex bg-gray-700 lg:px-4 lg:py-2 sm:py-3 sm:px-3  align-center">Search</button>
                 </form>
             </div>
-            <div style="display: flex;margin:40px;font-size: 20px;margin-top:80px">
-                <p style="border: 2px solid black; margin:10px; border-radius: 20px; padding-left:20px; padding-right:20px; padding-top:7px;padding-bottom:7px;">Ford</p>
-                <p style="border: 2px solid black; margin:10px; border-radius: 20px; padding-left:20px; padding-right:20px; padding-top:7px;padding-bottom:7px;">Toyota</p>
-                <p style="border: 2px solid black; margin:10px; border-radius: 20px; padding-left:20px; padding-right:20px; padding-top:7px;padding-bottom:7px;">BMW</p>
-                <p style="border: 2px solid black; margin:10px; border-radius: 20px; padding-left:20px; padding-right:20px; padding-top:7px;padding-bottom:7px;">Audi</p>
+            <div class="flex text-xl mt-16 lg:ml-8 sm:ml-10">
+                <p class="border-2 border-solid rounded-3xl sm:px-2 lg:px-6 py-2 mx-2" >Ford</p>
+                <p class="border-2 border-solid rounded-3xl sm:px-2 lg:px-6 py-2 mx-2 ">Toyota</p>
+                <p class="border-2 border-solid rounded-3xl sm:px-2 lg:px-6 py-2 mx-2 ">BMW</p>
+                <p class="border-2 border-solid rounded-3xl sm:px-2 lg:px-6 py-2 mx-2 ">Audi</p>
             </div>
-            <div style="display: flex;margin:40px;font-size: 20px;">
-                <p style="border: 2px solid black; margin:10px; border-radius: 20px; padding-left:20px; padding-right:20px; padding-top:7px;padding-bottom:7px;">Hyundai</p>
-                <p style="border: 2px solid black; margin:10px; border-radius: 20px; padding-left:20px; padding-right:20px; padding-top:7px;padding-bottom:7px;">Volkswagen</p>
-                <p style="border: 2px solid black; margin:10px; border-radius: 20px; padding-left:20px; padding-right:20px; padding-top:7px;padding-bottom:7px;">Tesla</p>
+            <div class="flex text-xl sm:mt-4 lg:mt-8 lg:ml-8 sm:ml-10">
+                <p class="border-2 border-solid rounded-3xl sm:px-2 lg:px-6 py-2 mx-2 lg:mb-11" >Hyundai</p>
+                <p class="border-2 border-solid rounded-3xl sm:px-2 lg:px-6 py-2 mx-2 lg:mb-11 ">Volkswagen</p>
+                <p class="border-2 border-solid rounded-3xl sm:px-2 lg:px-6 py-2 mx-2 lg:mb-11 ">Tesla</p>
             </div>
             <br><br>
         </section>
@@ -58,69 +73,69 @@
 
         <!--Categories-->
 
-        <section class="brandsSection" id="section2">
-            <h1 style="padding-left: 50px;padding-top: 60px;font-size: 33px;">Popular Categories</h1>
-            <div style="display: flex; padding-left: 40px;padding-top: 30px">
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">Electric</p>
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">SUV</p>
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">Sedan</p>
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">Pickup Truck</p>
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">Hatchback</p>
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">Hybrid</p>
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">Minivan</p>
-                <p style="border: 2px solid black; margin:10px;  padding-left:15px; padding-right:15px; padding-top:7px;padding-bottom:7px;">Wagon</p>
+        <section class="brandsSection bg-gray-200" id="section2">
+            <h1 class="pl-12 pt-16 text-4xl"><b>Popular Categories</b></h1>
+            <div class="flex pl-10 text-lg pt-6">
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">Electric</p>
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">SUV</p>
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">Sedan</p>
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">Pickup Truck</p>
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">Hatchback</p>
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">Hybrid</p>
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">Minivan</p>
+                <p class="border-2 border-solid border-black m-2 px-3 py-2">Wagon</p>
             </div>
 
     <!--Showroom-->
             
             <!--Row 1 -->
 
-            <div style="display: flex;color: white; font-family: 'Courier New', Courier, monospace; margin-top: 60px;">
-                <div style="margin-left: 50px; width:27%;background-color:#343a40; height: 73vh;">
-                    <img src="./../images/images_brands/section2 car1.png" style="width: 100%; ">
-                    <div style="padding: 20px;">
-                        <p style="font-size: 16px; margin-left:48px">2017 Mercedes-Benz GLC300</p>
-                        <p style="border: 2px solid white; width:150px; text-align: center; padding: 10px; padding-left: 10px; padding-right: 10px; margin-top: 20px; margin-left: 50px;">SHOP NOW</p>
+            <div class="flex text-white mt-20 mx-14">
+                <div class="ml-12 w-80 bg-gray-800 h-full">
+                    <img src="./../images/images_brands/section2 car1.png" class="w-full">
+                    <div class="p-6" >
+                        <p class="sm:text-sm lg:text-base sm:ml-1 lg:ml-7 sm:text-left" >2017 Mercedes-Benz GLC300</p>
+                        <p class="text-center border-2 border-solid border-white w-44 pl-4 pr-4 mt-6 lg:ml-10 py-2 sm:text-sm lg:text-base">SHOP NOW</p>
                     </div>
                 </div>
-                <div style="margin-left: 50px; width:27%;background-color:#343a40;height: 73vh;">
-                    <img src="./../images/images_brands/section1 car2.png" style="width: 100%; height:65% ;">
-                    <div style="padding: 20px;">
-                        <p style="font-size: 16px;margin-left: 51px;">2019 Toyota Land Cruiser XV</p>
-                        <p style="border: 2px solid white; width:100px; text-align: center; padding: 10px; padding-left: 25px; padding-right: 25px; margin-top: 20px; margin-left: 70px;">SHOP NOW</p>
+                <div class="ml-12 w-80 bg-gray-800 h-full">
+                    <img src="./../images/images_brands/section1 car2.png" class="w-full lg:h-full sm:h-44">
+                    <div class="lg:p-5 sm:p-6">
+                        <p class="sm:text-sm lg:text-base sm:ml-2 lg:ml-10 pt-">2019 Toyota Land Cruiser XV</p>
+                        <p class="text-center border-2 border-solid border-white w-44 pl-4 pr-4 mt-6 sm:ml-1 lg:ml-12 py-2 lg:mb-1">SHOP NOW</p>
                     </div>
                 </div>
-                <div style="margin-left: 50px; width:27%;background-color:#343a40; height: 73vh;">
-                    <img src="./../images/images_brands/image_2024_04_02T05_23_37_559Z.png" style="width: 100%;">
-                    <div style="padding: 20px;">
-                        <p style="font-size: 16px; margin-left: 48px;">Toyota Land Cruiser GR-Spot</p>
-                        <p style="border: 2px solid white; width:100px; text-align: center; padding: 10px; padding-left: 25px; padding-right: 25px; margin-top: 20px; margin-left: 70px;">SHOP NOW</p>
+                <div class="ml-12 w-80 bg-gray-800 h-full">
+                    <img src="./../images/images_brands/image_2024_04_02T05_23_37_559Z.png" class="w-full">
+                    <div class="p-6">
+                        <p class="sm:text-sm lg:text-base lg:ml-8 sm:ml-2">Toyota Land Cruiser GR-Spot</p>
+                        <p class="text-center border-2 border-solid border-white w-44 pl-4 pr-4 sm:mt-4 lg:mt-6 sm:ml-2 lg:ml-11 py-2 ">SHOP NOW</p>
                     </div>
                 </div>
             </div>
 
              <!--Row 2 -->
 
-            <div style="display: flex;color: white; font-family: 'Courier New', Courier, monospace; margin-top: 40px; padding-bottom: 35px;">
-                <div style="margin-left: 50px; width:27%;background-color:#343a40; height: 73vh;">
-                    <img src="./../images/images_brands/real section2 car4.png" style="width: 100%; ">
-                    <div style="padding: 20px;">
-                        <p style="font-size: 16px; margin-left:69px">2021 BMW-X5 V6 Petrol</p>
-                        <p style="border: 2px solid white; width:100px; text-align: center; padding: 10px; padding-left: 25px; padding-right: 25px; margin-top: 20px; margin-left: 70px;">SHOP NOW</p>
+            <div class="flex text-white mt-20 mx-14 pb-12">
+                <div class="ml-12 w-80 bg-gray-800 h-full">
+                    <img src="./../images/images_brands/real section2 car4.png" class="w-full">
+                    <div class="p-6">
+                        <p class="sm:text-sm lg:text-base sm:ml-5 lg:ml-14">2021 BMW-X5 V6 Petrol</p>
+                        <p class="text-center border-2 border-solid border-white w-44 pl-4 pr-4 mt-6 sm:ml-1 lg:ml-12 py-2">SHOP NOW</p>
                     </div>
                 </div>
-                <div style="margin-left: 50px; width:27%;background-color:#343a40;height: 73vh;">
-                    <img src="./../images/images_brands/section2 car5.png" style="width: 100%; height:65% ;">
-                    <div style="padding: 20px;">
-                        <p style="font-size: 16px;margin-left: 87px;">Volkswagen Tiguan</p>
-                        <p style="border: 2px solid white; width:100px; text-align: center; padding: 10px; padding-left: 25px; padding-right: 25px; margin-top: 20px; margin-left: 70px;">SHOP NOW</p>
+                <div class="ml-12 w-80 bg-gray-800 h-full">
+                    <img src="./../images/images_brands/section2 car5.png" class="w-full">
+                    <div class="p-5">
+                        <p class="sm:text-sm lg:text-base sm:ml-8 lg:ml-16">Volkswagen Tiguan</p>
+                        <p class="text-center border-2 border-solid border-white w-44 pl-4 pr-4 mt-6 sm:ml-2 lg:ml-12 py-2 pb-3">SHOP NOW</p>
                     </div>
                 </div>
-                <div style="margin-left: 50px; width:27%;background-color:#343a40; height: 73vh;">
-                    <img src="./../images/images_brands/section2 car1.png" style="width: 100%;">
-                    <div style="padding: 20px;">
-                        <p style="font-size: 16px; margin-left: 48px;">2017 Mercedes-Benz GLC300</p>
-                        <p style="border: 2px solid white; width:100px; text-align: center; padding: 10px; padding-left: 25px; padding-right: 25px; margin-top: 20px; margin-left: 70px;">SHOP NOW</p>
+                <div class="ml-12 w-80 bg-gray-800 h-full">
+                    <img src="./../images/images_brands/section2 car1.png" class="w-full">
+                    <div class="p-6">
+                        <p class="sm:text-sm lg:text-base sm:ml-2 lg:ml-9">2017 Mercedes-Benz GLC300</p>
+                        <p class="text-center border-2 border-solid border-white w-44 pl-4 pr-4 mt-6 sm:ml-2 lg:ml-11 py-2">SHOP NOW</p>
                     </div>
                 </div>
             </div>
@@ -128,13 +143,13 @@
 
         <!--Footer-->
 
-        <footer>
-            <ul>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Privacy</li>
-                <li style="padding-left: 350px;">© 2024 Jema Auto. All Rights Reserved</li>
+        <footer class=" bg-gray-600 justify-between h-24 flex text-white">
+            <ul class="list-none flex text-lg mt-4 text-lg ml-12">
+                <li class="p-5 mx-6">About</li>
+                <li class="p-5 mx-6">Blogs</a></li>
+                <li class="p-5 mx-6">Privacy</a></li>
             </ul>
+            <h1 class="text-lg mt-4 text-lg mr-12 p-5">© 2024 Jema Auto. All Rights Reserved</h1>
         </footer>
     </body>
 </html>
